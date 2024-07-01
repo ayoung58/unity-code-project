@@ -13,6 +13,8 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        // Move the vehicle forward
+        // We could technically also use 0,0,1, but Vector3.forward is more readable
+        transform.Translate(Vector3.forward);
     }
 }
