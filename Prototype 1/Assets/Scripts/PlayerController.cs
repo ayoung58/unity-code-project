@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
+    public float speed = 20;
     // Start is called before the first frame update
     void Start()
     {
@@ -18,6 +19,6 @@ public class PlayerController : MonoBehaviour
         // We use Time.deltaTime because Update is once per frame, but that depends on device
         // So, we want to do move based on time (i.e. seconds)
         // The code below is 0,0,1 per second, * 20, so 20 meters per second :)
-        transform.Translate(Vector3.forward * Time.deltaTime * 20);
+        transform.Translate(Vector3.forward * Time.deltaTime * speed);
     }
 }
