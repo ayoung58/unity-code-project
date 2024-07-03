@@ -5,7 +5,7 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour
 {
     public float speed = 20.0f;
-    public float turnSpeed = 5.0f;
+    public float turnSpeed = 15.0f;
     public float horizontalInput;
     public float forwardInput;
     // Start is called before the first frame update
@@ -25,7 +25,10 @@ public class PlayerController : MonoBehaviour
         // So, we want to do move based on time (i.e. seconds)
         // The code below is 0,0,1 per second, * 20, so 20 meters per second :)
         transform.Translate(Vector3.forward * Time.deltaTime * speed * forwardInput);
-        // if turnSpeed is negative, the car goes along left axis (car will face forward)
-        transform.Translate(Vector3.right * Time.deltaTime * turnSpeed * horizontalInput);
+        // if turnSpeed is negative, the car goes along left axis (car will face forward and slide with code below)
+        // transform.Translate(Vector3.right * Time.deltaTime * turnSpeed * horizontalInput);
+
+        // We use Vector3.up
+        transform.Rotate(Vector3.up, Time.deltaTime * turnSpeed * horizontalInput);
     }
 }
