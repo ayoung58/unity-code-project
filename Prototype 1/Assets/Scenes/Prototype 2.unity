@@ -841,6 +841,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 10
   xRange: 10
+  projectilePrefab: {fileID: 1738096551485550595, guid: 32a4aaa19f2aae84eb654c8c5b22748c, type: 3}
 --- !u!1001 &3203070203366451881
 PrefabInstance:
   m_ObjectHideFlags: 0

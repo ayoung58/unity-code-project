@@ -28,5 +28,11 @@ public class PlayerController2 : MonoBehaviour
         if (transform.position.x > xRange) {
             transform.position = new Vector3(xRange, transform.position.y, transform.position.z);
         }
+
+        // Activates when the key is down
+        if(Input.GetKeyDown(KeyCode.Space)) {
+            // Creates a projectile at the position of player with the rotation of projectile
+            Instantiate(projectilePrefab, transform.position, projectilePrefab.transform.rotation);
+        }
     }
 }
