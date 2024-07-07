@@ -18,7 +18,7 @@ public class SpawnManager : MonoBehaviour
     {
         // choose a random index, basically choosing a random animal
         int animalIndex = Random.Range(0, animalPrefabs.Length);
-        Vector3 spawnPosition = new Vector3(Random.Range(-spawnRangeX, spawnRangeX), 0, spawnPosZ;
+        Vector3 spawnPosition = new Vector3(Random.Range(-spawnRangeX, spawnRangeX), 0, spawnPosZ);
         if (Input.GetKeyDown(KeyCode.S)) {
             Instantiate(animalPrefabs[animalIndex], spawnPosition, animalPrefabs[animalIndex].transform.rotation);
         }
