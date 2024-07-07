@@ -18,6 +18,8 @@ public class DestroyOutOfBounds2 : MonoBehaviour
         if (transform.position.z > topBound) {
             Destroy(gameObject);
         } else if (transform.position.z < lowerBound) {
+            // Basically, when an animal gets destroyed past the player, then we end game
+            Debug.Log("Game Over!");
             Destroy(gameObject);
         }
     }

@@ -717,7 +717,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 10
-  xRange: 10
+  xRange: 20
   projectilePrefab: {fileID: 1738096551485550595, guid: 32a4aaa19f2aae84eb654c8c5b22748c, type: 3}
 --- !u!1001 &331543234931159107
 PrefabInstance:
@@ -770,10 +770,6 @@ PrefabInstance:
     - target: {fileID: 3595921983514503914, guid: 2da83f20f9e4a3640b01e9ceebdc0aba, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7836003689382679953, guid: 2da83f20f9e4a3640b01e9ceebdc0aba, type: 3}
-      propertyPath: speed
-      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
