@@ -531,7 +531,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ad13969b3123a7c47983094520765812, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dogPrefab: {fileID: 0}
+  dogPrefab: {fileID: 8241448880393145375, guid: 3e5fe95e580114a5f8f8348678e77463, type: 3}
 --- !u!850595691 &426674147
 LightingSettings:
   m_ObjectHideFlags: 0
